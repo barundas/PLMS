@@ -19,6 +19,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		http.httpBasic();
 		http.authorizeRequests().antMatchers("/").permitAll().anyRequest().fullyAuthenticated()
 		.and()
+//		.formLogin().loginPage("/login").permitAll()
+//		.and()
 		.exceptionHandling().accessDeniedHandler(null);
 	}
 }
