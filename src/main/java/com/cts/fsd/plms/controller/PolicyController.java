@@ -34,7 +34,7 @@ public class PolicyController {
 	
 	
 	@RequestMapping(value = "/all", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	@PreAuthorize("hasRole('Admin')")
+//	@PreAuthorize("hasRole('Admin')")
 	public List<PolicyInfo> getAllPolicies() {
 		logger.info("Fetch all PolicyInfo");
 		return policyService.getPolicyInfoList();

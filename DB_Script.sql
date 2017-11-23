@@ -84,11 +84,12 @@ VALUES
 
 CREATE TABLE `policyinfo` (
   `policykey` int(11) NOT NULL,
-  `policyid` varchar(45) DEFAULT NULL,
+  `policycode` varchar(45) DEFAULT NULL,
   `policyname` varchar(256) DEFAULT NULL,
+  `policydescription` varchar(4000) DEFAULT NULL,
   `policyinceptiondate` date DEFAULT NULL,
-  `policminimumeligibilityage` int(11) DEFAULT NULL,
-  `policmaximumeligibilityage` int(11) DEFAULT NULL,
+  `eligibleMinAge` int(11) DEFAULT NULL,
+  `eligibleMaxAge` int(11) DEFAULT NULL,
   PRIMARY KEY (`policykey`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Policy master table';
 
