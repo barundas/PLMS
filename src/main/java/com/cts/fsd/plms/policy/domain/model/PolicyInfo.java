@@ -16,20 +16,23 @@ public class PolicyInfo {
 	@Column(name = "policykey", unique = true, nullable = false)
 	private int policyKey;
 	
-	@Column(name = "policyid")
-	private String policyid;
+	@Column(name = "policycode")
+	private String policyCode;
 	
 	@Column(name = "policyname")
 	private String policyName;
 	
+	@Column(name = "policydescription")
+	private String policyDescription;
+	
 	@Column(name = "policyinceptiondate")
 	private String policyInceptionDate;
 	
-	@Column(name = "policminimumeligibilityage")
-	private int policyMinimumEligibilityAge;
+	@Column(name = "eligibleminage")
+	private int eligibleMinAge;
 	
-	@Column(name = "policmaximumeligibilityage")
-	private int policyMaximumEligibilityAge;
+	@Column(name = "eligiblemaxage")
+	private int eligibleMaxAge;
 
 	public int getPolicyKey() {
 		return policyKey;
@@ -39,12 +42,12 @@ public class PolicyInfo {
 		this.policyKey = policyKey;
 	}
 
-	public String getPolicyid() {
-		return policyid;
+	public String getPolicyCode() {
+		return policyCode;
 	}
 
-	public void setPolicyid(String policyid) {
-		this.policyid = policyid;
+	public void setPolicyCode(String policyCode) {
+		this.policyCode = policyCode;
 	}
 
 	public String getPolicyName() {
@@ -55,6 +58,14 @@ public class PolicyInfo {
 		this.policyName = policyName;
 	}
 
+	public String getPolicyDescription() {
+		return policyDescription;
+	}
+
+	public void setPolicyDescription(String policyDescription) {
+		this.policyDescription = policyDescription;
+	}
+
 	public String getPolicyInceptionDate() {
 		return policyInceptionDate;
 	}
@@ -63,20 +74,20 @@ public class PolicyInfo {
 		this.policyInceptionDate = policyInceptionDate;
 	}
 
-	public int getPolicyMinimumEligibilityAge() {
-		return policyMinimumEligibilityAge;
+	public int getEligibleMinAge() {
+		return eligibleMinAge;
 	}
 
-	public void setPolicyMinimumEligibilityAge(int policyMinimumEligibilityAge) {
-		this.policyMinimumEligibilityAge = policyMinimumEligibilityAge;
+	public void setEligibleMinAge(int eligibleMinAge) {
+		this.eligibleMinAge = eligibleMinAge;
 	}
 
-	public int getPolicyMaximumEligibilityAge() {
-		return policyMaximumEligibilityAge;
+	public int getEligibleMaxAge() {
+		return eligibleMaxAge;
 	}
 
-	public void setPolicyMaximumEligibilityAge(int policyMaximumEligibilityAge) {
-		this.policyMaximumEligibilityAge = policyMaximumEligibilityAge;
+	public void setEligibleMaxAge(int eligibleMaxAge) {
+		this.eligibleMaxAge = eligibleMaxAge;
 	}
 	
 }

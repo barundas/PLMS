@@ -93,6 +93,29 @@ CREATE TABLE `policyinfo` (
   PRIMARY KEY (`policykey`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Policy master table';
 
+INSERT INTO `plms`.`policyinfo`
+(`policykey`,
+`policycode`,
+`policyname`,
+`policydescription`,
+`policyinceptiondate`,
+`eligibleMinAge`,
+`eligibleMaxAge`)
+VALUES
+(1, 'LIC-001', 'Jeevan Sudha', 'dcdds d dsds', '2017-11-24', 5, 70);
+
+INSERT INTO `plms`.`policyinfo`
+(`policykey`,
+`policycode`,
+`policyname`,
+`policydescription`,
+`policyinceptiondate`,
+`eligibleMinAge`,
+`eligibleMaxAge`)
+VALUES
+(2, 'LIC-002', 'Jeevan Dhara', 'nmvnckjvnknvkxvxnkf  efjefe', '2010-11-24', 5, 70);
+
+
 CREATE TABLE `policysubscriptiondetails` (
   `userkey` int(11) NOT NULL,
   `policykey` int(11) NOT NULL,
